@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: var(--grey);
+        }
+        .company-name {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .form-control{
+            width: 30%; 
+        }
+    </style>
+    <title>Transaction</title>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;background: white;box-shadow: -4px -1px 21px -7px rgba(13, 22, 178, 0.75);width: 60%;position: relative;top:80px">
+        <div class="transaction-block" style="width: 70%;">
+            <div class="company-name" style="color: blue;">Sama Koppar</div>
+            <label for="expediteur" class="fs-4" style="color: blue;">Expéditeur:</label>
+            <hr>
+            <div class="form-group mb-2 align-items-center  d-flex justify-content-around">
+                <input type="number" id="expediteur" class="form-control" placeholder="Numéro de l'expéditeur">
+                <input type="text" class="form-control" placeholder="Nom de l'expéditeur" id="nomexpedi">
+                <i class="fa-solid fa-circle-info info" style="width: 13px;"></i>
+            </div>
+
+
+            <label for="expediteur" class="fs-4" style="color: blue;">Transaction:</label>
+            <hr>
+            <input type="number" id="Montant" class=" Montant form-control" placeholder="Montant" style="margin-left: 12em;width: 40%; ">
+            <div class="form-group mb-2 align-items-center d-flex justify-content-around mt-3 ecart">
+                <label for="fournlet nom_desti:HTMLInputElement|null=document.querySelector('#nom_desti')
+                isseurs" style="color: blue;">Fournisseurs :</label>
+                <select id="fournisseurs"style="width: 177px;height: 45px;border-radius:10px">
+                    <option value="france">OrangeMoney</option>
+                    <option value="espagne">Wave</option>
+                    <option value="espagne">Wari</option>
+                    <option value="espagne">CB</option>
+                </select>
+                <label for="transactions" style="color:blue;">transactions :</label>
+                <select id="transactions"style="width: 177px;height: 45px;border-radius:10px">
+                    <option value="france">dépot</option>
+                    <option value="espagne">retrait</option>
+                </select>
+                
+            </div>
+
+
+
+            <label for="expediteur" class="fs-4" style="color: blue;">Destinataire:</label>
+            <hr>
+            <div class="form-group mb-2 align-items-center d-flex justify-content-around">
+                <input type="number" id="destinaire" class="form-control" placeholder="Numéro de l'expéditeur">
+                <input type="text" class="form-control" placeholder="Nom de l'expéditeur" id="nom_desti">
+            </div>
+
+            <button style="color: aliceblue;background-color: blue;width: 120px;height: 40px; position: absolute;">valider</button>
+        </div>
+    </div>
+    <div id="modal" style="display: none;background-color: blue; width: 15%; border: 2px solid black;color: white;position: absolute;top: 40%;right: 10%;">
+        <p>prénom : Nabou</p>
+        <p>nom : Dash</p>
+        <p>N°comptes : 1</p>
+        <p>transaction : depot</p>
+    </div>
+    <script src="dist/transaction.js"></script>
+</body>
+
+</html>
